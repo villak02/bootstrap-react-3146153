@@ -6,6 +6,8 @@ import {NavBar} from './componets/NavBar'
 
 import { ExtensionCard } from './componets/ExtensionCard' 
 import { LoginForm } from './componets/LoginForm'
+import { ProductCard } from './componets/ProductCard'   
+
 
 export const App = () => {
   return (
@@ -54,6 +56,8 @@ export const App = () => {
       </div>
       <h1>react+sintaxis</h1>
       <LoginForm/>
+
+      <ProductCard/>
 
     </>
   )
