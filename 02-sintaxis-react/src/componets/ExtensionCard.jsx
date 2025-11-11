@@ -8,7 +8,7 @@ export const ExtensionCard = ({cardTitle, cardImage, cardDescription}) => {
         <>
         
 
-        <div class="card">
+        <div class="tarjeta">
     <div class="info">
       <div class="icon">{cardImage}</div>
 
