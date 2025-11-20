@@ -1,0 +1,46 @@
+.tile {
+  color: #ffffff;
+}
+
+
+.tile-green {
+  background-color: #79b8ab;   
+}
+
+
+.tile-lightgreen {
+  background-color: #7ab58b;   
+}
+
+
+.tile-blue {
+  background-color: #3498db;   
+}
+
+
+.tile-pink {
+  background-color: #d27494;   
+}
+
+
+.tile-red {
+  background-color: #c06859;   
+}
+
+
+.tile-orange {
+  background-color: #d5926d;  
+}
+
+
+.tile-yellow {
+  background-color: #d49c3b;   
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.icon-big {
+  font-size: 3.5rem;
+}
