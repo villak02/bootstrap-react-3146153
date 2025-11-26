@@ -1,0 +1,126 @@
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+
+.app {
+  max-width: 1200px;          
+  margin: 0 auto;             
+  padding: 20px 16px 40px;
+}
+
+
+.top-title {
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+
+.main-nav {
+  background-color: #a70000;  
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+
+.nav-logo img {
+  height: 32px;
+}
+
+
+.nav-center,
+.nav-right {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+
+.nav-center {
+  border-left: 1px solid #ffffff55;
+  border-right: 1px solid #ffffff55;
+}
+
+.nav-right {
+  max-width: 120px;
+}
+
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  padding: 120px 20px;
+  text-align: center;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+}
+
+.hero-inner img {
+  max-height: 120px;
+  margin-bottom: 16px;
+}
+
+.hero-title {
+  font-size: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+.section-banner {
+  background-color: #a70000;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 16px;
+  margin: 24px 0 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+
+.idea-label {
+  display: inline-block;
+  border: 3px solid #a70000;
+  padding: 6px 40px;
+  text-align: center;
+  margin: 0 auto 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+.idea-section {
+  text-align: center;
+}
+
+
+.idea-image {
+  max-width: 260px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+
+.idea-text {
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-size: 14px;
+}
