@@ -8,8 +8,8 @@ body {
 
 
 .app {
-  max-width: 1200px;          
-  margin: 0 auto;             
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px 16px 40px;
 }
 
@@ -24,7 +24,7 @@ body {
 
 
 .main-nav {
-  background-color: #a70000;  
+  background-color: #a70000;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -34,11 +34,9 @@ body {
   margin-bottom: 16px;
 }
 
-
 .nav-logo img {
   height: 32px;
 }
-
 
 .nav-center,
 .nav-right {
@@ -47,7 +45,6 @@ body {
   font-weight: 600;
   font-size: 14px;
 }
-
 
 .nav-center {
   border-left: 1px solid #ffffff55;
@@ -60,26 +57,19 @@ body {
 
 
 .hero {
-  background-size: cover;
-  background-position: center;
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat;  
   color: #ffffff;
+  
+  
+  padding: 220px 20px;  
+  
+
   margin-top: 8px;
   margin-bottom: 24px;
-  padding: 120px 20px;
   text-align: center;
   border-radius: 4px;
-  background-repeat: no-repeat;
-}
-
-.hero-inner img {
-  max-height: 120px;
-  margin-bottom: 16px;
-}
-
-.hero-title {
-  font-size: 24px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 
@@ -95,32 +85,46 @@ body {
 }
 
 
-.idea-label {
-  display: inline-block;
-  border: 3px solid #a70000;
-  padding: 6px 40px;
-  text-align: center;
-  margin: 0 auto 16px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
 
 
-.idea-section {
-  text-align: center;
+.idea-image-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 60px auto 24px;   
 }
 
 
 .idea-image {
-  max-width: 260px;
-  width: 100%;
-  margin-bottom: 16px;
+  width: 300px;            
+  border-radius: 4px;
+  display: block;
+}
+
+
+.idea-label {
+  border: 3px solid #a70000;
+  padding: 6px 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: white;
+}
+
+
+.idea-label-overlay {
+  position: absolute;
+  top: -50px;               
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 
 .idea-text {
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
-  line-height: 1.5;
   font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
 }
+
+

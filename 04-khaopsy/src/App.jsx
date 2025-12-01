@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import angelImg from './assets/angel.png'
 import fondoNegro from './assets/fondonegro.png'
 import logoPequeno from './assets/logopequeño.png'
@@ -8,13 +7,11 @@ import logoPequeno from './assets/logopequeño.png'
 function App() {
   return (
     <div className="app">
-
       
       <header className="top-title">
         KHAOPSY
       </header>
 
-      
       <nav className="main-nav">
         <div className="nav-logo">
           <img src={logoPequeno} alt="Logo pequeño" />
@@ -29,26 +26,27 @@ function App() {
         </div>
       </nav>
 
-      
       <section
         className="hero"
         style={{ backgroundImage: `url(${fondoNegro})` }}
       >
-        <div className="hero-inner">
-          <h1 className="hero-title">MÁS ALLÁ DE LA PROFECÍA</h1>
-        </div>
+        
       </section>
 
-      
       <section className="section-banner">
         NUESTRO PROYECTO
       </section>
 
-      
       <section className="idea-section">
-        <div className="idea-label">IDEA</div>
+        <div className="idea-image-wrapper">
+          <div className="idea-label idea-label-overlay">IDEA</div>
 
-        <img src={angelImg} alt="Ángel del proyecto" className="idea-image" />
+          <img
+            src={angelImg}
+            alt="Ángel del proyecto"
+            className="idea-image"
+          />
+        </div>
 
         <p className="idea-text">
           Desarrollar un proyecto multimedial transmedia que represente el
@@ -58,8 +56,10 @@ function App() {
           en momentos de crisis religiosas.
         </p>
       </section>
+
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
