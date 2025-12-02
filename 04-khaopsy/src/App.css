@@ -128,3 +128,38 @@ body {
 }
 
 
+
+.comic-section {
+  background-color: #111111;   
+  margin-top: 40px;            
+  padding: 40px 0 60px;        
+  border-radius: 4px;
+}
+
+.comic-banner {
+  background-color: #a70000;   
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  padding: 10px 16px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  max-width: 90%;              
+  margin: 0 auto 24px;        
+}
+
+.comic-subtitle {
+  display: inline-block;
+  border: 3px solid #a70000;   
+  color: #000000;
+  background-color: #ffffff;   
+  padding: 6px 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 auto 32px;         
+  border-radius: 4px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+

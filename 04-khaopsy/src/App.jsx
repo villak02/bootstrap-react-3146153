@@ -4,6 +4,9 @@ import angelImg from './assets/angel.png'
 import fondoNegro from './assets/fondonegro.png'
 import logoPequeno from './assets/logopequeño.png'
 
+
+import personajeKael from './assets/personaje-kael.png'
+
 function App() {
   return (
     <div className="app">
@@ -12,6 +15,7 @@ function App() {
         KHAOPSY
       </header>
 
+      
       <nav className="main-nav">
         <div className="nav-logo">
           <img src={logoPequeno} alt="Logo pequeño" />
@@ -26,17 +30,22 @@ function App() {
         </div>
       </nav>
 
+      
       <section
         className="hero"
         style={{ backgroundImage: `url(${fondoNegro})` }}
       >
-        
+        <div className="hero-inner">
+          <h1 className="hero-title">MÁS ALLÁ DE LA PROFECÍA</h1>
+        </div>
       </section>
 
+      
       <section className="section-banner">
         NUESTRO PROYECTO
       </section>
 
+      
       <section className="idea-section">
         <div className="idea-image-wrapper">
           <div className="idea-label idea-label-overlay">IDEA</div>
@@ -57,9 +66,28 @@ function App() {
         </p>
       </section>
 
+      
+      <section className="comic-section">
+        <div className="comic-banner">
+          COMIC
+        </div>
+
+       
+        <div className="comic-subtitle">
+          PERSONAJES
+        </div>
+
+        
+        <div className="comic-character-wrapper">
+          <img
+            src={personajeKael}
+            alt="Personaje Kael"
+            className="comic-character-image"
+          />
+        </div>
+      </section>
     </div>
-  );
+  )
 }
 
-export default App;
-
+export default App
