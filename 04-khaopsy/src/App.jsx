@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import angelImg from './assets/angel.png'
 import fondoNegro from './assets/fondonegro.png'
@@ -6,8 +6,43 @@ import logoPequeno from './assets/logopequeño.png'
 
 
 import personajeKael from './assets/personaje-kael.png'
+import personajeKyle from './assets/personaje.kyle.png'
+import personajePadre from './assets/personaje.padre.png'
+import personajeSandy from './assets/personaje.sandy.png'
+import personajeSt from './assets/personaje.st.png'
+
+import escenarioExortacion from './assets/escenario-exortacion.png';
+import habitacionConLuz from './assets/habitacion-con-luz-png.png';
+import habitacionExortacion from './assets/habitacion-exortacion.png';
 
 function App() {
+
+  // CARRUSEL //
+  const personajes = [
+    personajeKael,
+    personajeKyle,
+    personajePadre,
+    personajeSandy,
+    personajeSt,
+  ]
+
+  const [indicePersonaje, setIndicePersonaje] = useState(0)
+
+  const personajeActual = personajes[indicePersonaje]
+
+  const irAnterior = () => {
+    setIndicePersonaje((prev) =>
+      prev === 0 ? personajes.length - 1 : prev - 1
+    )
+  }
+
+  const irSiguiente = () => {
+    setIndicePersonaje((prev) =>
+      prev === personajes.length - 1 ? 0 : prev + 1
+    )
+  }
+  
+
   return (
     <div className="app">
       
@@ -35,9 +70,7 @@ function App() {
         className="hero"
         style={{ backgroundImage: `url(${fondoNegro})` }}
       >
-        <div className="hero-inner">
-          <h1 className="hero-title">MÁS ALLÁ DE LA PROFECÍA</h1>
-        </div>
+        
       </section>
 
       
@@ -67,26 +100,85 @@ function App() {
       </section>
 
       
-      <section className="comic-section">
-        <div className="comic-banner">
-          COMIC
-        </div>
+    <section className="comic-section">
+      <div className="comic-banner">
+    COMIC
+      </div>
 
-       
-        <div className="comic-subtitle">
-          PERSONAJES
-        </div>
+     <div className="comic-subtitle">
+    PERSONAJES
+     </div>
 
-        
-        <div className="comic-character-wrapper">
-          <img
-            src={personajeKael}
-            alt="Personaje Kael"
-            className="comic-character-image"
-          />
-        </div>
-      </section>
+
+     //Carrusel con flechas//
+     <div className="comic-character-wrapper">
+     <button className="arrow arrow-left" onClick={irAnterior}>
+      &lt;
+    </button>
+
+    <img
+      src={personajeActual}
+      alt="Personaje"
+      className="comic-character-image"
+    />
+
+     <button className="arrow arrow-right" onClick={irSiguiente}>
+      &gt;
+     </button>
     </div>
+
+
+
+
+
+    </section>
+
+      <section className="escenarios-section">
+  <div className="escenarios-banner">
+    ESCENARIOS
+  </div>
+
+  <p className="escenarios-text">
+    Los espacios comienzan en la cotidianidad íntima y se transforman en lugares
+    cargados de simbolismo y terror. Esta evolución transporta al espectador de lo
+    familiar a lo sobrenatural, utilizando el entorno para reflejar el deterioro emocional
+    de Kael y el colapso de su mundo.
+  </p>
+
+  /ESCENARIO 1 /
+  <div className="escenario-block">
+    <img
+      src={escenarioExortacion}
+      alt="Escenario de exortación"
+      className="escenario-image"
+    />
+    <p className="escenario-title">Escenario de exortación</p>
+  </div>
+
+  /ESCENARIO 2/
+  <div className="escenario-block">
+    <img
+      src={habitacionConLuz}
+      alt="Habitación con luz"
+      className="escenario-image"
+    />
+    <p className="escenario-title">Habitación con luz</p>
+  </div>
+
+  /ESCENARIO 3/
+  <div className="escenario-block">
+    <img
+      src={habitacionExortacion}
+      alt="Habitación de exortación"
+      className="escenario-image"
+    />
+    <p className="escenario-title">Habitación de exortación</p>
+  </div>
+</section>
+
+
+
+  </div>
   )
 }
 

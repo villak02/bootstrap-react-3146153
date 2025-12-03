@@ -163,3 +163,96 @@ body {
   transform: translateX(-50%); 
 }
 
+
+.comic-character-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;          
+  margin-top: 20px;
+}
+
+
+.comic-character-image {
+  width: 220px;        
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 3px solid #ffffff;
+}
+
+
+
+
+.arrow {
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: 0.2s;
+}
+
+.arrow:hover {
+  color: #a70000;
+}
+
+.arrow-left {
+  margin-right: 10px;
+}
+
+.arrow-right {
+  margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+.escenarios-section {
+  background-color: #1a1a1a; 
+  padding: 40px 20px;
+  border-radius: 4px;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+.escenarios-banner {
+  background-color: #a70000;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 16px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.escenarios-text {
+  max-width: 350px;
+  margin: 0 auto 40px auto;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+.escenario-block {
+  margin-bottom: 50px;
+}
+
+.escenario-image {
+  width: 260px;      
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto 12px auto;
+}
+
+.escenario-title {
+  font-size: 16px;
+  line-height: 1.3;
+}
