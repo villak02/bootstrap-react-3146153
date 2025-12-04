@@ -10,7 +10,7 @@ body {
 .app {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 16px 40px;
+  padding: 20px 0 40px;
 }
 
 
@@ -82,6 +82,9 @@ body {
   margin: 24px 0 16px;
   text-transform: uppercase;
   border-radius: 4px;
+  width: 100vw;
+margin-left: 50%;
+transform: translateX(-50%);
 }
 
 
@@ -130,23 +133,34 @@ body {
 
 
 .comic-section {
-  background-color: #111111;   
-  margin-top: 40px;            
-  padding: 40px 0 60px;        
+  background-color: #101010;
+  padding: 20px;
+  padding-top: 0; 
   border-radius: 4px;
+  margin-top: 40px;
 }
 
 .comic-banner {
-  background-color: #a70000;   
+  background-image: url('../assets/patron-rojo.png');
+  background-size: 200px;
+  background-repeat: repeat;
+  background-color: #a70000;
+  
   color: #ffffff;
   text-align: center;
   font-weight: 700;
   padding: 10px 16px;
   text-transform: uppercase;
   border-radius: 4px;
-  max-width: 90%;              
-  margin: 0 auto 24px;        
-}
+
+  
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40px; 
+  margin-bottom: 20px; 
+} 
+
 
 .comic-subtitle {
   display: inline-block;
@@ -168,7 +182,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 24px;          
+  gap: 24px;           
   margin-top: 20px;
 }
 
@@ -214,10 +228,12 @@ body {
 
 
 .escenarios-section {
-  background-color: #1a1a1a; 
+  background-color: #101010; 
+  
   padding: 40px 20px;
+  padding-top: 0;
   border-radius: 4px;
-  margin-top: 40px;
+  
   text-align: center;
   color: white;
 }
@@ -231,6 +247,9 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
   font-size: 18px;
+  width: 100vw;
+margin-left: 50%;
+transform: translateX(-50%);
 }
 
 .escenarios-text {

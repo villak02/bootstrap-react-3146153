@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 
+
+
+
 import angelImg from './assets/angel.png'
 import fondoNegro from './assets/fondonegro.png'
 import logoPequeno from './assets/logopequeño.png'
@@ -14,10 +17,11 @@ import personajeSt from './assets/personaje.st.png'
 import escenarioExortacion from './assets/escenario-exortacion.png';
 import habitacionConLuz from './assets/habitacion-con-luz-png.png';
 import habitacionExortacion from './assets/habitacion-exortacion.png';
+import patronRojo from './assets/patron-rojo.png';
 
 function App() {
 
-  // CARRUSEL //
+  
   const personajes = [
     personajeKael,
     personajeKyle,
@@ -110,7 +114,7 @@ function App() {
      </div>
 
 
-     //Carrusel con flechas//
+     
      <div className="comic-character-wrapper">
      <button className="arrow arrow-left" onClick={irAnterior}>
       &lt;
@@ -145,7 +149,7 @@ function App() {
     de Kael y el colapso de su mundo.
   </p>
 
-  /ESCENARIO 1 /
+  
   <div className="escenario-block">
     <img
       src={escenarioExortacion}
@@ -155,7 +159,7 @@ function App() {
     <p className="escenario-title">Escenario de exortación</p>
   </div>
 
-  /ESCENARIO 2/
+  
   <div className="escenario-block">
     <img
       src={habitacionConLuz}
@@ -165,7 +169,7 @@ function App() {
     <p className="escenario-title">Habitación con luz</p>
   </div>
 
-  /ESCENARIO 3/
+  
   <div className="escenario-block">
     <img
       src={habitacionExortacion}
