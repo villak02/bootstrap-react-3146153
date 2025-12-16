@@ -1,277 +1,60 @@
 
+
 body {
-  margin: 0;
+
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background-color: #ffffff;
-  color: #000000;
 }
 
-
-.app {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 0 40px;
-}
-
-
-.top-title {
-  text-align: center;
-  font-size: 28px;
-  letter-spacing: 4px;
+.titulo-principal {
+  letter-spacing: 7px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
-
-.main-nav {
-  background-color: #a70000;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 8px 16px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-}
-
-.nav-logo img {
-  height: 32px;
-}
-
-.nav-center,
-.nav-right {
-  flex: 1;
-  text-align: center;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.nav-center {
-  border-left: 1px solid #ffffff55;
-  border-right: 1px solid #ffffff55;
-}
-
-.nav-right {
-  max-width: 120px;
-}
-
-
-.hero {
-  background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat;  
-  color: #ffffff;
+.barra {
   
-  
-  padding: 220px 20px;  
-  
-
-  margin-top: 8px;
-  margin-bottom: 24px;
-  text-align: center;
-  border-radius: 4px;
+  margin-bottom: 20px;
 }
 
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 220px 20px;
+}
 
-.section-banner {
-  background-color: #a70000;
+.franja-comic {
+  
   color: #ffffff;
-  text-align: center;
-  font-weight: 700;
   padding: 10px 16px;
-  margin: 24px 0 16px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  width: 100vw;
-margin-left: 50%;
-transform: translateX(-50%);
-}
-
-
-
-
-.idea-image-wrapper {
-  position: relative;
-  width: fit-content;
-  margin: 60px auto 24px;   
-}
-
-
-.idea-image {
-  width: 300px;            
-  border-radius: 4px;
-  display: block;
-}
-
-
-.idea-label {
-  border: 3px solid #a70000;
-  padding: 6px 40px;
-  font-weight: 600;
-  text-transform: uppercase;
-  background: white;
-}
-
-
-.idea-label-overlay {
-  position: absolute;
-  top: -50px;               
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-}
-
-
-.idea-text {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 1.5;
-  text-align: center;
-}
-
-
-
-.comic-section {
-  background-color: #101010;
-  padding: 20px;
-  padding-top: 0; 
-  border-radius: 4px;
-  margin-top: 40px;
-}
-
-.comic-banner {
-  background-image: url('../assets/patron-rojo.png');
-  background-size: 200px;
-  background-repeat: repeat;
-  background-color: #a70000;
-  
-  color: #ffffff;
-  text-align: center;
-  font-weight: 700;
-  padding: 10px 16px;
-  text-transform: uppercase;
-  border-radius: 4px;
-
-  
   width: 100vw;
   margin-left: 50%;
   transform: translateX(-50%);
-  margin-top: 40px; 
-  margin-bottom: 20px; 
-} 
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 
-
-.comic-subtitle {
-  display: inline-block;
-  border: 3px solid #a70000;   
-  color: #000000;
-  background-color: #ffffff;   
+.etiqueta {
+  
   padding: 6px 40px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 0 auto 32px;         
-  border-radius: 4px;
+  margin: 0 auto 22px;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%); 
-}
-
-
-.comic-character-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;           
-  margin-top: 20px;
-}
-
-
-.comic-character-image {
-  width: 220px;        
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 3px solid #ffffff;
-}
-
-
-
-
-.arrow {
-  background: none;
-  border: none;
-  font-size: 40px;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 0 10px;
-  transition: 0.2s;
-}
-
-.arrow:hover {
-  color: #a70000;
-}
-
-.arrow-left {
-  margin-right: 10px;
-}
-
-.arrow-right {
-  margin-left: 10px;
-}
-
-
-
-
-
-
-
-
-.escenarios-section {
-  background-color: #101010; 
-  
-  padding: 40px 20px;
-  padding-top: 0;
-  border-radius: 4px;
-  
   text-align: center;
-  color: white;
 }
 
-.escenarios-banner {
-  background-color: #a70000;
-  color: #fff;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 10px 16px;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  font-size: 18px;
-  width: 100vw;
-margin-left: 50%;
-transform: translateX(-50%);
+.contenedor-imagen-idea {
+  width: fit-content;
+  margin: 90px auto;
 }
 
-.escenarios-text {
-  max-width: 350px;
-  margin: 0 auto 40px auto;
-  font-size: 14px;
-  line-height: 1.5;
+.imagen-idea {
+  width: 300px;
 }
 
-
-.escenario-block {
-  margin-bottom: 50px;
+.texto-idea {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.escenario-image {
-  width: 260px;      
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto 12px auto;
-}
-
-.escenario-title {
-  font-size: 16px;
-  line-height: 1.3;
+.subtitulo-personajes{
+  margin-left: 41%;
 }
